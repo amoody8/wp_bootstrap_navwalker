@@ -86,7 +86,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0 ) {
 				$atts['data-target']   	= '#';
-				//$atts['data-toggle']	= 'dropdown';
+				// use this if you want to be able to toggle menu $atts['data-toggle']	= 'dropdown';
 				$atts['data-hover']		= 'dropdown';
 				$atts['data-delay']		= '100';
 				$atts['class']			= 'dropdown-toggle';
